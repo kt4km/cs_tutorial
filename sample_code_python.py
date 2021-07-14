@@ -34,8 +34,8 @@ e_sum = 0
 e_before = 0
 
 #----数値を保存用の箱----#
-x_list = [[] for i in range(np.ndim(x))]    # ndimで次元を取得し，保存したい数値に合った次元の箱を生成
-t_list = [[] for i in range(np.ndim(t))]
+x_list = [[] for i in range(len(x))]    # ndimで次元を取得し，保存したい数値に合った次元の箱を生成
+t_list = []
 
 x_list = np.hstack([x_list, x])    # 初期値を箱に保存(hstackは行列の結合)
 t_list = np.hstack([t_list, t])
